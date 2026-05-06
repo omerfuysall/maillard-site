@@ -5,26 +5,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maillard Coffee & Roastery</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
-    font-family: Arial;
-    background: black;
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d;
     color: white;
+}
+
+/* HERO */
+header {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-header {
-    padding: 100px 20px;
-    background: #222;
+header h1 {
+    font-size: 3rem;
 }
 
+header p {
+    opacity: 0.8;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #c59d5f;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* SECTIONS */
 section {
-    padding: 40px;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-a {
-    color: gold;
+h2 {
+    color: #c59d5f;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #1a1a1a;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    padding: 30px;
 }
 </style>
 </head>
@@ -34,22 +81,50 @@ a {
 <header>
     <h1>Maillard Coffee</h1>
     <p>3. Nesil Kahve & Kavurma Atölyesi</p>
+    <a href="#about" class="btn">Keşfet</a>
 </header>
 
-<section>
+<section id="about">
     <h2>Hakkımızda</h2>
-    <p>Özenle kavrulmuş kahveler ve benzersiz bir deneyim.</p>
+    <p>
+        Kahve çekirdeğinin en saf halini deneyimlemeniz için buradayız.
+        Özenle kavrulmuş çekirdekler ve özel demleme teknikleri ile.
+    </p>
+</section>
+
+<section>
+    <h2>Deneyimler</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Kavurma Atölyesi</h3>
+            <p>Çekirdekten fincana yolculuk.</p>
+        </div>
+        <div class="card">
+            <h3>Specialty Coffee</h3>
+            <p>V60 • Espresso • Chemex</p>
+        </div>
+        <div class="card">
+            <h3>Workshop</h3>
+            <p>Kahve eğitimleri ve tadımlar.</p>
+        </div>
+    </div>
 </section>
 
 <section>
     <h2>Instagram</h2>
-    <a href="https://www.instagram.com/maillardtr/">Takip Et</a>
+    <a href="https://www.instagram.com/maillardtr/" class="btn">Takip Et</a>
 </section>
 
 <section>
     <h2>Konum</h2>
-    <p>Sivas Merkez</p>
+    <iframe 
+    src="https://maps.google.com/maps?q=maillard%20coffee%20sivas&t=&z=15&output=embed"
+    width="100%" height="300"></iframe>
 </section>
+
+<footer>
+    <p>© 2026 Maillard Coffee</p>
+</footer>
 
 </body>
 </html>
